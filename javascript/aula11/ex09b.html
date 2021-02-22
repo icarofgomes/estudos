@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificando a Nacionalidade</h1>
+    País onde nasceu: <input type="text" name='txtnac' id='txtnac'>
+    <input type="button" value="Verificar" onclick="analisar()">
+    <div id='res'></div>
+    <script>
+        function analisar(){
+            nac = String(document.querySelector('input#txtnac').value).toLocaleUpperCase()
+            resp = document.querySelector('div#res')
+            resp.innerHTML = `<p>O país digitado foi <strong>${nac}</strong>.</p>`
+            resp.innerHTML += `Portando você é `
+            if (nac == 'BRASIL'){
+                resp.innerHTML += '<strong>brasileiro</strong>.'
+            } else {
+                resp.innerHTML += '<strong>estrangeiro</strong>.'
+            }
+        }
+    </script>
+</body>
+</html>
