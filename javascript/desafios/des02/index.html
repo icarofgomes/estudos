@@ -10,7 +10,13 @@
     <h1>Desafio das Boas Vindas</h1>
     <div>
         <input type="button" value="Inicie o desafio" onclick="des()">
-        <input type="Qual é o seu nome?" id= 'name'>
     </div>
+    <script>
+        function des(){
+            nome = prompt('Qual seu nome?')
+            idade = prompt(`Olá ${nome}! Quantos anos você tem?`)
+            alert(`Acabei de conhecer ${nome}, que tem ${idade} anos de idade!`)
+        }
+    </script>
 </body>
 </html>
