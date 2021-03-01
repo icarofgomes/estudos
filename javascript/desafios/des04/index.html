@@ -15,13 +15,13 @@
         function calcular(){
         produto = prompt('Qual produto você está comprando?')
         preço = Number(prompt(`Quanto custa ${produto} que você está comprando?`))
-        pago = Number(prompt(`Qual valor você deu para pagar ${produto}?`))
-        preço_real = preço.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
-        pago_real = pago.toLocaleString('pt-BR', {style: 'currency', currency = 'BRL'})
-        troco = `Troco: ${pago_real-preço_real}`
-        alert(troco)
+        pago = Number(prompt(`Quanto você deu pelo ${produto}?`))
+        troco = pago - preço
+        prec = preço.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+        pag = pago.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+        troc = troco.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+        alert(`Você comprou ${produto} que custou ${prec}. Deu ${pag} em dinheiro e vai receber ${troc} de troco. Volte Sempre!`)
         }
-
     </script>
 </body>
 </html>
