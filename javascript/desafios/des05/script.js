@@ -1,13 +1,13 @@
 function converter(){
-    metros = Number(prompt('Digite uma distância em metros(m):'))
-    m = metros.toFixed(2).replace('.',',')
-    km= (metros/1000).toFixed(3).replace('.', ',')
-    hm= (metros/100).toFixed(3).replace('.', ',')
-    dam = (metros/10).toFixed(3).replace('.', ',')
-    dm = (metros*10).toFixed(3).replace('.', ',')
-    cm = (metros*100).toFixed(3).replace('.', ',')
-    mm = (metros*1000).toFixed(3).replace('.', ',')
-    res = document.querySelector('div#res')
+    let metros = Number(prompt('Digite uma distância em metros(m):'))
+    let km= (metros/1000).toFixed(3).replace('.', ',')
+    let hm= (metros/100).toFixed(3).replace('.', ',')
+    let dam = (metros/10).toFixed(3).replace('.', ',')
+    let dm = (metros*10).toFixed(3).replace('.', ',')
+    let cm = (metros*100).toFixed(3).replace('.', ',')
+    let m = metros.toFixed(2).replace('.',',')
+    let mm = (metros*1000).toFixed(3).replace('.', ',')
+    let res = document.querySelector('div#res')
     res.innerHTML = `<h2>A distância de ${m} metros corresponde a...</h2>`
     res.innerHTML += `<p>${km} quilômetros (km)</p>`
     res.innerHTML += `<p>${hm} hectômetros (hm)</p>`
