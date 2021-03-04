@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 012</title>
+</head>
+<body>
+    <script>
+        var num = Number(prompt('Digite um número entre 0 e 1000:'))
+        var pos;
+        if (num < 500){
+            pos = 4
+        }else if (num < 700){
+            pos = 3
+        }else if (num < 900){
+            pos = 2
+        }else{
+            pos =1
+        }
+        switch(pos){
+            case 1:
+                document.write('É CAMPEAOO!')
+                document.body.style = 'background-color: gold;'
+                break;
+            case 2:
+                document.write('MEDALHA DE PRATA!')
+                document.body.style = 'background-color: silver;'
+                break;
+            case 3:
+                document.write('BRONZE!')
+                document.body.style = 'background-color: chocolate;'
+                break;
+            default:
+                document.write('NB')
+                break;
+        }
+        switch(pos){
+            case 1:
+            case 2:
+            case 3:
+                document.write('<br>Subiu ao pódio')
+                break;
+            default:
+                document.write('<br>Não subiu ao pódio!')
+                break;
+        }
+    </script>
+</body>
+</html>
