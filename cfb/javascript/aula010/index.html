@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 010</title>
+</head>
+<body>
+    <script>
+        var aluno = prompt('Qual é o nome do aluno?')
+        var n1 = Number(prompt(`Digite a primeira nota de ${aluno}`))
+        var n2 = Number(prompt(`Digite a segunda nota de ${aluno}`))
+        var media = (n1+n2)/2
+        var res
+        if (media > 5){
+            res = `${aluno} foi aprovado!\n`
+            if (n2 > n1){
+                res += 'Houve evolução nas notas.'
+            }else{
+                res += 'Não houve evolução nas notas.'
+            }
+        }else{
+            res = `${aluno} foi reprovado!\n`
+            if (n2 > n1){
+                res += 'Houve evolução nas notas.'
+            }else{
+                res += 'Não houve evolução nas notas.'
+            }
+        }
+        alert(res)
+    </script>
+</body>
+</html>

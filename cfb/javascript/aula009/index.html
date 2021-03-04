@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 009</title>
+</head>
+<body>
+    <script>
+        var n1 = 9
+        var n2 = 10
+        var media = (n1+n2)/2
+        var res
+        if (media < 2){
+            res = 'Aluno Reprovado Categoricamente!'
+        }else if (media < 4){
+            res = 'Aluno Reprovado!'
+        }else if (media < 6){
+            res = 'Aluno em Recuperação!'
+        }else if (media < 9){
+            res = 'Aluno Aprovado!'
+        }else{
+            res = 'Aluno Aprovado Categoricamente!'
+        }
+        alert(res)
+    </script>
+</body>
+</html>
