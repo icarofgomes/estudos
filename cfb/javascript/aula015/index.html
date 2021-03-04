@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 015</title>
+</head>
+<body>
+    <script>
+        var mochila1 = [], mochila2 = [], pos;
+        var num = [7,6,5,3,4,1,2,0,9,8];
+        var numeros = num.join();
+
+        mochila1.push('Faca');
+        mochila1.push('Lanterna');
+        mochila1.push('Bússola');
+        mochila1.push('Luneta');
+        mochila1.push('Bandagem');
+        
+        mochila2.push('Corda');
+        mochila2.push('Isqueiro');
+        mochila2.push('Luvas');
+        mochila2.push('Pedra');
+        mochila2.push('Arame');
+
+        mochila1.pop();
+
+        var mochila = mochila1.concat(mochila2);
+        
+        pos = mochila.indexOf('Bandagem');
+        if (pos < 0){
+            document.write('Item não está na mochila');
+        }else{
+            document.write(`Item está na mochila na posição ${pos}.`);
+        }
+
+        num.sort();
+        num.reverse();
+        document.write('<br>Números: ' + num);
+
+        document.write('<br>Números: ' + numeros);
+
+        document.write(`<br>O tamanho da mochila 1 é : ${mochila1.length}`);
+        document.write(`<br>O tamanho da mochila 2 é : ${mochila2.length}`);
+        document.write(`<br>O tamanho da mochila é : ${mochila.length}`);
+    </script>
+</body>
+</html>
