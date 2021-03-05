@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 018</title>
+</head>
+<body>
+    <h1>Mochila:</h1>
+    <script>
+        var coluna, linha;
+        var mochila = [
+            ['Corda', 2, 'Peso: 2kg'],
+            ['Poção de Cura', 5, 'Peso: 200g'],
+            ['Lanterna', 1, 'Peso: 500g'],
+            ['Pilha', 4, 'Peso: 75g']
+            ]
+            ;
+
+        for (linha=0; linha<mochila.length; linha++){
+            for (coluna=0; coluna<mochila[linha].length; coluna++)
+                if (coluna == 0){
+                    document.write(mochila[linha][coluna] + ' (')
+                }else if (coluna == 1){
+                    document.write(mochila[linha][coluna] + ' un.) - ')
+                }else{
+                    document.write(mochila[linha][coluna] + ' ')
+                }
+                ;
+            document.write('<br>')
+        }
+
+
+        /*var num = [];
+        vezes = prompt('Digite quantos valores deseja adicionar: ')
+        for(var cont=0; cont<vezes; cont++){
+            num.push(prompt(`Digite o número que deseja adicionar na posição ${cont+1}`))
+            document.write(num[cont]+'<br>')
+        }*/
+    </script>
+</body>
+</html>
