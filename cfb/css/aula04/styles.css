@@ -1,0 +1,17 @@
+body{
+    background-color: #333;
+    background-image: url(html.ico), url(css3-full.png);
+    background-size: 128px;
+    background-repeat: repeat;
+    background-position: 64px 64px, 128px 128px ;
+}
+
+p{
+    color: #fff;
+    text-align: center;
+    background-image: url(waves-redim.png);
+    font-size: 35pt;
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    background-color: #f90;
+}
