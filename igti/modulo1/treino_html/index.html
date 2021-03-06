@@ -68,8 +68,88 @@
                 <td>Icaro</td>
                 <td>ic@gmail.com</td>
             </tr>
+            <tr>
+                <td>João</td>
+                <td>joao@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>maria@gmail.com</td>
+            </tr>
         </thead>
-
     </table>
+    <h2>Inserindo Formulário</h2>
+    <form action="pagina3.html">
+        <p>
+            <label for="itext">Campo de texto:</label>
+            <input type="text" name="itext" id="itext">
+        </p>
+        <p>
+            <label for="itext2">Campo somente de Leitura:</label>
+            <input type="text" readonly name='itext2' id="itext2" value="Não editável">
+        </p>
+        <p>
+            <label for="itext3">Campo desabilitado</label>
+            <input type="text" name="itext3" id="itext3" disabled value="Desabilitado">
+        </p>
+        <p>
+            <label for="inum">Campo numérico:</label>
+            <input type="number" name="inum" id="inum">
+        </p>
+        <p>
+            <label for="idate">Campo de data:</label>
+            <input type="date" name="idate" id="idate">
+        </p>
+        <p>
+            <label for="ifile">Campo de submissão de arquivo:</label>
+            <input type="file" name="ifile" id="ifile">
+        </p>
+        <p>
+            <label for="ipassw">Campo de senha</label>
+            <input type="password" name="ipassaw" id="ipassw">
+        </p>
+        <p>
+            Campo de escolha:<br>
+            <label><input type="radio" name="iradio" id="iradio" value="1">Sim</label>
+            <label><input type="radio" name="iradio" id="iradio" value="2">Não</label>
+        </p>
+        <p>
+            Campo de multipla escolha: <br>
+            <label><input type="checkbox" name="icheck" id="icheck" value="1">Sorvete</label>
+            <label><input type="checkbox" name="icheck" id="icheck" value="2">Bolo</label>
+            <label><input type="checkbox" name="icheck" id="icheck" value="3">Pudim</label>
+            <label><input type="checkbox" name="icheck" id="icheck" value="4">Chocolate</label>
+        </p>
+        <p>
+            Campo de Seleção simples:<br>
+            <select name="isel" id="isel">
+                <option value="valor1">Primeiro valor</option>
+                <option value="valor2">Segundo valor</option>
+                <option value="valor3">Terceiro valor</option>
+            </select>
+        </p>
+        <p>
+            Campo de Seleção múltiplo:<br>
+            <select name="iselmult" id="iselmult" multiple>
+                <option value="valor1">Primeiro valor</option>
+                <option value="valor2">Segundo valor</option>
+                <option value="valor3">Terceiro valor</option>
+                <option value="valor4">Quarto valor</option>
+                <option value="valor5">Quinto valor</option>
+            </select>
+        </p>
+        <p>
+            <label for="itarea">Campo de área de texto:</label><br>
+            <textarea 
+            name="itarea"
+            id="itarea"
+            cols="20"
+            rows="5"
+            ></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar formulário">
+        </p>
+    </form>
 </body>
 </html>
