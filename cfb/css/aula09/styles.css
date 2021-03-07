@@ -1,0 +1,24 @@
+p{
+    width: 500px;
+/*
+    border-top:#000 solid 7px;
+    border-bottom:#f00 dotted 7px;
+    border-right:#00f double 7px;
+    border-left:#0f0 groove 7px;
+*/
+    border-top-width: 10px;
+    border-bottom-width: 10px;
+    border-right-width: 10px;
+    border-left-width: 10px;
+
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+
+    border-top-color: #000;
+    border-bottom-color: #f00;
+    border-right-color: #0f0;
+    border-left-color: #00f;
+    
+}
