@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Simulação de Parcelas</h1>
+        <div class="fb">
+            <div><label>Valor:</label>
+                <input type="number" name="valor" id="valor" value="200000">
+            </div>
+            <div><label>Prazo(anos):</label>
+                <input type="number" name="prazo" id="prazo" value="20">
+            </div>
+            <div><label>Juros</label>
+                <input type="number" name="juros" id="juros" value="0.08">
+            </div>
+        </div>
+        <input type="button" value="Simular" onclick="simular()">
+        <div id=res></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+    background-color: aqua;
+}
+
+div{
+    width: 600px;
+    background-color: white;
+}
+
+.fb{
+    display: flex;
+}
